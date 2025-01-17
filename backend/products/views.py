@@ -1,11 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render # Using Render to return dynamically loaded templates
 from .models import Product
 
-# Create your views here.
-
-# Home page view
-def home(request):
-    return render(request, 'products/home.html')
+# Create your views here. These are request handlers.
 
 # List all products
 def product_list(request):
